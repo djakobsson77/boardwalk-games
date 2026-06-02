@@ -8,7 +8,7 @@
     <meta name="description" content="A portfolio for Daniel Jacobsson">
     <meta name="keywords" content="Portfolio, web development, coding, programmimg, projects">
     <meta name="author" content="Daniel Jacobsson">
-    
+
     <title>Portfolio</title>
 
     <!-- Favicon -->
@@ -50,6 +50,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
+                    <li class="nav-item ms-3">
+                        <img src="assets/images/se.webp" id="lang-sv" class="flag-btn" alt="Swedish">
+                    </li>
+                    <li class="nav-item">
+                        <img src="assets/images/usuk.png" id="lang-en" class="flag-btn" alt="English">
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,59 +66,89 @@
         <section id="projects" class="container">
             <div class="row text-center g-4">
                 <div class="col-12 text-center my-5">
-                    <h2 class="display-5">Projects</h2>
+                    <h2 class="display-5" data-key="projects_title">Projects</h2>
+                    <p data-key="projects_intro">
+                        Here you'll find a selection of my projects — ranging from data‑driven
+                        web applications to creative and thematic websites. Each project
+                        highlights different aspects of my skills in web
+                        development, programming, and database management.
+                    </p>
                 </div>
                 <!-- cols for cards -->
-                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="card">
-                        <img src="assets/images/forest.webp" class="card-img-top"
+                        <img src="assets/images/forest.webp" class="card-img-top project-img"
                             alt="A view of an ancient, nordic forest">
                         <div class="card-body">
-                            <h3 class="card-title">Treasures in the Nordic forests</h3>
-                            <p class="card-text">A website about what's growing hidden deep within
-                                the
-                                endless forests in the nordic countries</p>
-                            <p>Coming soon!</p>
+                            <h3 class="card-title" data-key="proj1_title">Treasures in the Nordic Forests</h3>
+
+                            <p class="card-text" data-key="proj1_intro">
+                                This project showcases my ability to build a clean and responsive frontend website.
+                                It is created using:
+                            </p>
+
+                            <ul>
+                                <li data-key="proj1_list_html">Semantic and accessible HTML</li>
+                                <li data-key="proj1_list_css">Custom CSS for layout and styling</li>
+                                <li data-key="proj1_list_bootstrap">Bootstrap for responsive design</li>
+                                <li data-key="proj1_list_js">JavaScript for interactive elements</li>
+                                <li data-key="proj1_list_deploy">Deployment on GitHub Pages</li>
+                            </ul>
+
+                            <p data-key="proj1_outro">
+                                A lightweight project that highlights modern UI design and core web development skills.
+                            </p>
+
+                            <a href="https://djakobsson77.github.io/Milestone2_Nordic_forests" class="btn btn-primary"
+                                target="_blank" data-key="proj1_button">
+                                Visit the project
+                            </a>
+                            <a href="https://github.com/djakobsson77/Milestone2_Nordic_forests.git" target="_blank">View repository on GitHub</a>
                         </div>
+
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3 mb-4">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="card">
-                        <img src="assets/images/mi.webp" class="card-img-top"
+                        <img src="assets/images/mi.webp" class="card-img-top project-img"
                             alt="The game's hero walking along the dockside on Mêlée Island">
                         <div class="card-body">
-                            <h3 class="card-title">The secret of the Monkey Island</h3>
-                            <p class="card-text">A fantastic website about one of the most nostalgic and great
-                                adventure
-                                computer games of the 90's</p>
-                            <p>Coming soon!</p>
+                            <h3 class="card-title" data-key="proj2_title">The secret of Monkey Island</h3>
+
+                            <p class="card-text" data-key="proj2_intro">
+                                This project demonstrates my ability to build a complete data‑driven
+                                web application. The site is built with Django and includes:
+                            </p>
+
+                            <ul>
+                                <li data-key="proj2_list_backend">A fully functional Python backend</li>
+                                <li data-key="proj2_list_db">A PostgreSQL database</li>
+                                <li data-key="proj2_list_crud">Complete CRUD functionality</li>
+                                <li data-key="proj2_list_auth">User authentication</li>
+                                <li data-key="proj2_list_responsive">Responsive design using HTML, CSS, and Bootstrap
+                                </li>
+                                <li data-key="proj2_list_deploy">Deployment on Heroku</li>
+                                <li data-key="proj2_list_ui">A modern and user-friendly interface</li>
+                            </ul>
+
+                            <p data-key="proj2_outro">
+                                A project that combines backend logic, structure, and modern web development practices.
+                            </p>
+
+                            <a href="https://mi-secrets-2f12fbcad9a9.herokuapp.com/" class="btn btn-primary"
+                                target="_blank" data-key="proj2_button">
+                                Visit the project
+                            </a>
+                            <a href="https://github.com/djakobsson77/milestone3_mi_secrets.git" target="_blank">View repository on GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/kite.webp" class="card-img-top"
-                            alt="One of the band Kite's album covers">
-                        <div class="card-body">
-                            <h3 class="card-title">The synth-pop band Kite</h3>
-                            <p class="card-text">A fanmade website dedicated to the swedish synth-pop band Kite. If you
-                                like synth, you will like this. </p>
-                            <p>Coming soon!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-xl-3 mb-4">
-                    <div class="card">
-                        <img src="assets/images/rubik.webp" class="card-img-top"
-                            alt="An image of a Rubik's Cube along with mathematical formulas">
-                        <div class="card-body">
-                            <h3 class="card-title">The fantastic Rubik's Cube</h3>
-                            <p class="card-text">Have you ever tried to solve this amazing little cube? Here's a
-                                website
-                                about the story behind the cube</p>
-                            <p>Coming soon!</p>
-                        </div>
-                    </div>
+                <div class="col-12 text-center my-5">
+                    <p data-key="projects_end_text">
+                        More projects will be added over time as new work is completed.
+                        This portfolio is continuously growing, and I look forward to sharing more of my development
+                        journey soon.
+                    </p>
                 </div>
             </div>
         </section>
@@ -126,6 +162,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="assets/js/lang.js"></script>
 </body>
 
 </html>

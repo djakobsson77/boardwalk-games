@@ -52,6 +52,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <li class="nav-item ms-3">
+                            <img src="assets/images/se.webp" id="lang-sv" class="flag-btn" alt="Swedish">
+                        </li>
+                        <li class="nav-item">
+                            <img src="assets/images/usuk.png" id="lang-en" class="flag-btn" alt="English">
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -65,14 +71,14 @@
                 <div class="text-center my-4">
                     <img src="assets/images/dj-logo.jpeg" alt="Daniel Jacobsson Portfolio logo" class="logo">
                     <h1 class="display-4"> Daniel Jacobsson</h1>
-                    <h2 class="display-6 mb-5">Software Developer</h2>
-                    <p>
-                        Hello! I'm Daniel, a junior web developer and coder based in Sweden. I have a passion for
-                        creating dynamic and responsive web applications that provide seamless user experiences.
-                        I also love coding and problem-solving, constantly seeking to enhance my skills and stay updated
-                        with the latest industry trends.
-                        This portfolio showcases some of my projects and skills. Feel free to explore and reach out if
-                        you'd like to connect!
+                    <h2 class="display-6 mb-5">Fullstack Web Developer</h2>
+                    <p data-key="intro_text">
+                        Hello! I'm Daniel — a fullstack web developer based in Sweden.
+                        I love building clean, responsive and user‑friendly applications, and I'm constantly exploring
+                        new ways to grow as a developer.
+                        This portfolio is a collection of the projects I've built, the skills I've developed, and the
+                        journey I'm on as I transition into the tech industry.
+                        Feel free to explore — and reach out if you'd like to connect.
                     </p>
                 </div>
             </div>
@@ -80,33 +86,30 @@
 
         <section class="container">
             <div class="row">
-                <div class="col-12 text-center my-4">
-                    <h2 class="display-5">The Typical Coder</h2>
-                </div>
                 <div class="col-12 col-md-6 mb-5 d-flex justify-content-center">
                     <img src="assets/images/coder.jpg" class="img-fluid coder" alt="Coder sitting by his computer">
                 </div>
                 <div class="col-12 col-md-6 mb-4">
-                    <p>
-                        This is the image of a typical coder, sitting with what he loves to do. It could be me, because
-                        I also love what I do in front of the computer.
-                        Since you can see a glimpse of his beard, he's no teenager. Neither am I.<br>
-                        Ok, this is just an image but what we all wonder is what is he coding? A website? An app? A
-                        game?
-                        Who knows? Maybe all of them.<br>
-                        More importantly, what's inside his head? What is he thinking about and what is his knowledge?
+                    <h2 class="display-6" data-key="typical_title">The Typical Coder</h2>
+                    <p data-key="typical_text">
+                        We often imagine a coder like this — sitting in front of a screen, fully absorbed in what they
+                        love. It could be anyone. It could be me. It could be the person who built your favorite app. It
+                        could be the next developer joining your team.
+                        <br>
+                        What we don't see in the picture is the story behind the code.
+                        What drives the person?
+                        What problems are they solving?
+                        What ideas are they turning into reality?
+                        <br>
+                        That's the interesting part.
+                        <br>
+                        And that's what this portfolio is about — not just showing lines of code, but giving you a sense
+                        of who I am, how I think, and what I enjoy creating.
+                        <br>
+                        If you're curious to know more, feel free to explore the other pages.
+                        They'll tell you the rest of the story.
                     </p>
-                    <p>
-                        And what about me? What am I coding? Well, I am coding this portfolio website to show you what I
-                        can do.<br>
-                        But what can I do more? And what kind of person am I?<br>
-                        That is what this portfolio is all about. Showing you who I am, what I can do and what I have
-                        done.
-                    </p>
-                    <p>
-                        So, if you are interested to know more about me and my work, please check out the other pages
-                        linked in the navigation bar.
-                    </p>
+                    <img src="assets/images/coding.gif" class="img-fluid typing" alt="">
                 </div>
             </div>
         </section>
@@ -139,23 +142,32 @@
                 <div class="col-12 col-md-6 my-4 text-center">
                     <!--Contact Form-->
                     <section class="contact-section">
-                        <form action="success.html" method="GET">
+                        <form action="https://formspree.io/f/xwvzgkyq" method="POST">
                             <h3 class="contact-heading">Contact form</h3>
                             <p>If you want me to contact you or you want to<br>
                                 send me a message, fill out the form below</p>
+
                             <label for="name" hidden>Name:</label>
                             <input name="name" id="name" type="text" class="contact-input" placeholder="Name"
                                 required><br>
+
                             <label for="email" hidden>Email:</label>
                             <input name="email" id="email" type="email" class="contact-input" placeholder="Email"
                                 required><br>
+
                             <label for="message" hidden>Message:</label>
                             <textarea name="message" id="message" class="contact-input"
                                 placeholder="Type your message here" required></textarea>
+
+                            <!-- Formspree kräver detta för att undvika spam -->
+                            <input type="hidden" name="_subject" value="New message from your portfolio">
+                            <input type="hidden" name="_captcha" value="false">
+
                             <div>
                                 <button type="submit" class="submit-btn">Send</button>
                             </div>
                         </form>
+
                     </section>
                 </div>
             </div>
@@ -168,6 +180,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="assets/js/lang.js"></script>
 </body>
 
 </html>
